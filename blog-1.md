@@ -18,12 +18,12 @@ Now, consider two scenarios:
 2. When we display a public profile, we definitely do not want to expose the password.
 
 
-A naive approach would be to create new interfaces for every scenario, copying properties manually:
-``ts
+A naive approach would be to create new interfaces for every scenario, copying properties manually: <br/>
+``
     interface UserRegistrationDTO{
         name: string;
         email: string:
         password: string;
     }
 ``
-This creates duplication. If we change the ``email`` type in `user`
+This creates duplication. If we change the ``email`` type in `User`, we have to update it manually in ``UserRegistrationDTO``.
